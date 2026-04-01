@@ -90,8 +90,8 @@ export const helloInit = () => {
     hello = "夜深了";
   }
   ElMessage({
-    dangerouslyUseHTMLString: true,
-    message: `<strong>${hello}</strong> 欢迎来到我的主页`,
+      dangerouslyUseHTMLString: true,
+      message: `<strong>${hello}</strong> Ciallo ～(∠・ω< )⌒★!`,
   });
 };
 

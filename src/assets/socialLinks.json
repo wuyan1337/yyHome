@@ -2,37 +2,25 @@
   {
     "name": "Github",
     "icon": "/images/icon/github.png",
-    "tip": "去 Github 看看",
-    "url": "https://github.com/imsyy"
+    "tip": "Github",
+    "url": "https://github.com/wuyan1337"
   },
   {
-    "name": "BiliBili",
+    "name": "Youtube",
     "icon": "/images/icon/bilibili.png",
-    "tip": "(゜-゜)つロ 干杯 ~",
-    "url": "https://space.bilibili.com/98544142"
+    "tip": "Youtube",
+    "url": "https://www.youtube.com/@Augenstern77"
   },
   {
-    "name": "QQ",
-    "icon": "/images/icon/qq.png",
-    "tip": "有什么事吗",
-    "url": "https://res.abeim.cn/api/qq/?qq=1539250352"
-  },
-  {
-    "name": "Email",
-    "icon": "/images/icon/email.png",
-    "tip": "来封 Email ~",
-    "url": "mailto:one@imsyy.top"
-  },
-  {
-    "name": "Twitter",
-    "icon": "/images/icon/twitter.png",
-    "tip": "你懂的 ~",
-    "url": "https://twitter.com/iimmsyy"
+    "name": "Steam",
+    "icon": "/images/icon/music.png",
+    "tip": "Steam",
+    "url": "https://steamcommunity.com/profiles/76561199633334369/"
   },
   {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "你懂的 ~",
-    "url": "https://t.me/bottom_user"
+    "tip": "Telegram",
+    "url": "https://t.me/r5201314"
   }
 ]

@@ -1,6 +1,4 @@
 <template>
-  <!-- 加载 -->
-  <Loading />
   <!-- 壁纸 -->
   <Background @loadComplete="loadComplete" />
   <!-- 主界面 -->
@@ -38,7 +36,6 @@ import { helloInit, checkDays } from "@/utils/getTime.js";
 import { HamburgerButton, CloseSmall } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
 import { Icon } from "@vicons/utils";
-import Loading from "@/components/Loading.vue";
 import MainLeft from "@/views/Main/Left.vue";
 import MainRight from "@/views/Main/Right.vue";
 import Background from "@/components/Background.vue";
@@ -46,9 +43,9 @@ import Footer from "@/components/Footer.vue";
 import Box from "@/views/Box/index.vue";
 import MoreSet from "@/views/MoreSet/index.vue";
 import cursorInit from "@/utils/cursor.js";
-import config from "@/../package.json";
 
 const store = mainStore();
+store.imgLoadStatus = true;
 
 // 页面宽度
 const getWidth = () => {
@@ -104,21 +101,6 @@ onMounted(() => {
   // 监听当前页面宽度
   getWidth();
   window.addEventListener("resize", getWidth);
-
-  // 控制台输出
-  const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
-  const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
-  const styleContent = "color: rgb(30,152,255);";
-  const title1 = "無名の主页";
-  const title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ /
-  | | | |\\/| |\\___ \\  \\   /    \\   /
- _| |_| |  | |____) |  | |      | |
-|_____|_|  |_|_____/   |_|      |_|`;
-  const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
-  console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });
 
 onBeforeUnmount(() => {
@@ -200,36 +182,35 @@ onBeforeUnmount(() => {
         width: calc(100% + 6px);
       }
       @media (min-width: 391px) {
-        // w 1201px ~ max
         padding-left: 0.7vw;
         padding-right: 0.25vw;
-        @media (max-width: 1200px) { // w 1101px ~ 1280px
+        @media (max-width: 1200px) {
           padding-left: 2.3vw;
           padding-right: 1.75vw;
         }
-        @media (max-width: 1100px) { // w 993px ~ 1100px
+        @media (max-width: 1100px) {
           padding-left: 2vw;
           padding-right: calc(2vw - 6px);
         }
-        @media (max-width: 992px) { // w 901px ~ 992px
+        @media (max-width: 992px) {
           padding-left: 2.3vw;
           padding-right: 1.7vw;
         }
-        @media (max-width: 900px) { // w 391px ~ 900px
+        @media (max-width: 900px) {
           padding-left: 2vw;
           padding-right: calc(2vw - 6px);
         }
       }
     }
     .menu {
-      top: 605.64px; // 721px * 0.84
-      left: 170.5px; // 391 * 0.5 - 25px
+      top: 605.64px;
+      left: 170.5px;
       @media (min-width: 391px) {
         left: calc(50% - 25px);
       }
     }
     .f-ter {
-      top: 675px; // 721px - 46px
+      top: 675px;
       @media (min-width: 391px) {
         padding-left: 6px;
       }
@@ -241,7 +222,7 @@ onBeforeUnmount(() => {
       width: 391px;
     }
     .menu {
-      left: 167.5px; // 391px * 0.5 - 28px
+      left: 167.5px;
     }
     .f-ter {
       width: 391px;

@@ -1,14 +1,19 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+    <div class="more-content">
+        <span>路遥知马力</span>
+        <span>我的生活就像鹿鼎记</span>
+    </div>
 </template>
 
 <style lang="scss" scoped>
-.more-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 100%;
-}
+    .more-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
 </style>
