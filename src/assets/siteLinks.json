@@ -3,5 +3,15 @@
     "icon": "LaptopCode",
     "name": "yyTrackr",
     "link": "https://trackr.shinori.us.ci/"
+  },
+  {
+    "icon": "Book",
+    "name": "2FA Bot",
+    "link": "https://t.me/yyAuth_bot"
+  },
+  {
+    "icon": "Notebook",
+    "name": "yyWall",
+    "link": "https://wall.shinori.us.ci/"
   }
 ]
