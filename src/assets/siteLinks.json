@@ -1,8 +1,33 @@
 [
   {
+    "icon": "Cloud",
+    "name": "yyShare",
+    "link": "https://cloud.shinori.ccwu.cc/"
+  },
+  {
     "icon": "LaptopCode",
     "name": "yyTrackr",
-    "link": "https://trackr.shinori.us.ci/"
+    "link": "https://trackr.shinori.ccwu.cc/"
+  },
+  {
+    "icon": "Activity",
+    "name": "Kuma",
+    "link": "https://status.shinori.ccwu.cc/"
+  },
+  {
+    "icon": "Shield",
+    "name": "Komari",
+    "link": "https://komari.shinori.ccwu.cc/"
+  },
+  {
+    "icon": "Image",
+    "name": "yyComic",
+    "link": "https://yycomic.shinori.ccwu.cc/"
+  },
+  {
+    "icon": "Mail",
+    "name": "ShinoriMail",
+    "link": "https://mail.shinori.ccwu.cc/"
   },
   {
     "icon": "Book",
@@ -12,6 +37,11 @@
   {
     "icon": "Notebook",
     "name": "yyWall",
-    "link": "https://wall.shinori.us.ci/"
+    "link": "https://wall.shinori.ccwu.cc/"
+  },
+  {
+    "icon": "LayoutDashboard",
+    "name": "TAMC",
+    "link": "https://tamc.shinori.ccwu.cc/"
   }
 ]
